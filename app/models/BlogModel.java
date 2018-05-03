@@ -5,7 +5,7 @@ import org.mongodb.morphia.annotations.Id;
 
 import java.util.Date;
 
-@Entity(value = "blog.blog")
+@Entity(value = "blog.posts")
 public class BlogModel{
 
     @Id

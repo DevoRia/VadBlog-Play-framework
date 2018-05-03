@@ -30,17 +30,17 @@ public class MongoRepository extends MongoDatabaseManager{
     }
 
     @Override
-    void save(BlogModel blogModel) {
+    public void save(BlogModel blogModel) {
         getMorphia().datastore().save(blogModel);
     }
 
     @Override
-    void remove(String id) {
+    public void remove(String id) {
         getMorphia().datastore().delete(findById(id));
     }
 
     @Override
-    void edit(BlogModel blogModel, UpdateOperations<BlogModel> operation) {
+    public void edit(BlogModel blogModel, UpdateOperations<BlogModel> operation) {
         getMorphia().datastore().update(blogModel, operation);
     }
 

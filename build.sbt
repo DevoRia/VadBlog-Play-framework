@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   "org.mongodb.morphia" % "morphia" % "1.3.2",
   "org.mongodb" % "mongo-java-driver" % "3.2.2"
 )
+libraryDependencies += "org.pac4j" %% "play-pac4j" % "6.0.0-RC1"
 // Testing libraries for dealing with CompletionStage...
 libraryDependencies += "org.assertj" % "assertj-core" % "3.6.2" % Test
 libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
